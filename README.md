@@ -34,3 +34,4 @@ Assuming LAMP stack installed on your system
 4. Change Database user password  -> CI/application/config/database.php  
 5. bower install on root project folder  
 6. default username stored in database script is admin / password
+7. set document root to public_html

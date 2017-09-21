@@ -1,0 +1,37 @@
+/* CSS Document */
+html{
+	position: relative;
+	min-height: 100%;
+}
+
+body { padding-top: 50px; padding-bottom: 70px; }
+
+.dashed{
+	border: 1px dashed red;
+}
+pre {
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word;}
+
+code {
+font-family: Courier, 'New Courier', monospace;
+font-size: 12px;}
+
+.container {
+    width: 95%;
+}
+/* FOOTER */
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+footer .well{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* END FOOTER */

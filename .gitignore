@@ -1,0 +1,8 @@
+
+public_html/scripts/vendor/
+application/cache/*
+application/logs/*
+composer.lock
+
+user_guide/
+/nbproject/private/

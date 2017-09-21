@@ -1,0 +1,48 @@
+<!-- NAVBAR -->
+<div class="navbar navbar-inverse navbar-fixed-top" ng-controller="NavbarCtrl">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a class="navbar-brand" href="javascript:void(0)"><strong>[[LOGO]]</strong></a>-->
+        </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+                <li ui-sref-active="active"><a ui-sref="home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> HOME</a></li>
+                <li ui-sref-active="active"><a ui-sref="news"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Tutorials</a></li>
+                <li ui-sref-active="active"><a ui-sref="category"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Categories</a></li>
+            </ul>      
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-hide="isLogin === true" ui-sref-active="active"><a ui-sref="register"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Sign up</a></li>
+                <li ng-hide="isLogin === true" ui-sref-active="active"><a ui-sref="login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login</a></li>
+                
+            </ul>
+            <ul ng-hide="isLogin === false" class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> User</a>
+                    <ul class="dropdown-menu">
+                        <li ng-click="logout()" ui-sref-active="active"><a>Logout</a></li>
+
+                        <li>
+                            <a ui-sref="addNews">Add Article</a>
+                        </li>
+                        <li>
+                            <a href="#">Something else here</a>
+                        </li>
+                        <li class="dropdown-header">Nav header</li>
+                        <li>
+                            <a href="#">Separated link</a>
+                        </li>
+                        <li>
+                            <a href="#">One more separated link</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- /NAVBAR -->

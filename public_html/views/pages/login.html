@@ -1,0 +1,30 @@
+<div class="container-fluid" ng-controller="UserLoginController">
+<div class="row">  
+<div class="col-sm-16">
+<h1>Login</h1>  
+
+<form novalidate class="form-horizontal" name="loginForm" ng-submit="login()">  
+<div class="form-group">
+  <label for="username" class="col-md-2 control-label">Username <span style="color: #cc0000">*</span></label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="username" ng-model="username" required>
+  </div>
+</div>
+<div class="form-group">
+  <label for="password" class="col-md-2 control-label">Password <span style="color: #cc0000">*</span></label>
+  <div class="col-md-10">
+    <input type="password" class="form-control" id="password" ng-model="password" required>        
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-md-10 col-md-offset-2">
+    <input type="submit" class="btn btn-primary btn-raised" ng-disabled="loginForm.$invalid" />
+  </div>
+</div>  
+</form>
+
+</div>
+</div>
+</div>
+   
+ 

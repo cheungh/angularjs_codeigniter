@@ -1,0 +1,77 @@
+<div class="container-fluid">
+    <div class="row">  
+        <div class="col-sm-16">
+            <h1>Add news</h1>  
+
+
+            <div ng-controller="NewsEditCtrl">
+
+                <form novalidate class="form-horizontal" name="newsForm" ng-submit="writeNews()">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="title" class="col-md-2 control-label">Title <span style="color: #cc0000">*</span></label>
+
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="title" ng-model="create.title" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category" class="col-md-2 control-label">Category <span style="color: #cc0000">*</span></label>
+
+                            <div class="col-sm-10">
+                                <select class="form-control" ng-model="create.category">
+                                    <option ng-repeat="option in categoryOptions" value="{{option.id}}">{{option.category_name}}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="intro" class="col-md-2 control-label">Intro <span style="color: #cc0000">*</span></label>
+
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="intro" ng-model="create.intro" required>        
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="content" class="col-md-2 control-label">Content <span style="color: #cc0000">*</span></label>
+
+                            <div class="col-md-10">
+                                <textarea ng-change="updateHtml()" ui-tinymce="tinymceOptions" class="form-control" rows="6" id="content" ng-model="create.content" required>
+
+                                </textarea>
+                                <div ng-bind-html="tinymceHtml"></div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-2">
+                                <input type="submit" class="btn btn-primary btn-raised" ng-disabled="newsForm.$invalid" />
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </fieldset>
+                </form>
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>

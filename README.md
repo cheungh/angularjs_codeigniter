@@ -20,6 +20,11 @@ More features will be added
 visit www.fullstack-tutorial.com   
 (Add/Edit articles is hidden apparently! it is (password protected) accessible by me to add or edit articles)  
 
+## Improvements tips for users
+Option to use cache in front end JS
+See scripts/app.config.js   'USE_CACHE': true'
+And cache check code in controllers
+
 ## Quick Start
 
 Assuming LAMP stack installed on your system  
@@ -27,4 +32,5 @@ Assuming LAMP stack installed on your system
 2. Import database.sql in your database  
 3. Change BASE_URL -> scripts/app/config/app.config.js (Optional. you can change to your server name or server path) 
 4. Change Database user password  -> CI/application/config/database.php  
-5. bower install on root project folder
+5. bower install on root project folder  
+6. default username stored in database script is admin / password

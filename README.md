@@ -4,7 +4,7 @@ sample app structure basic integration between AngularJS 1.x and LAMP Codeignite
 This project code is forked from 
 https://github.com/giannidk/CodeIgniter-AngularJS-sample-app/  
 
-## Additional Features added from the original git repo
+## Additional Features added to the original git repo
 1. Edit News or Articles  
 2. Access control for Edit News  
 3. Login/Logoff  

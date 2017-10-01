@@ -29,7 +29,7 @@ app.controller("CategoryCtrl", ['$scope', '$state', '$stateParams', '$http', '$s
     };
     
     $scope.getCategoryNameById = function(catId) {
-        for(var i = 0; $scope.categories.length; i++) {
+        for(var i = 0; i < $scope.categories.length; i++) {
             console.log("id is " + $scope.categories[i].id);
             if ($scope.categories[i].id === catId) {
                 console.log("cat name is " + $scope.categories[i].category_name);

@@ -1,6 +1,5 @@
 angular.module('Config', ['ui.router', 'ngRoute'])
     .constant('APP_CONSTANTS', {
-        //'BASE_URL': 'http://splayhouse.com',
         'USE_CACHE': false,
         'BASE_URL': '',
         'JSON_DIR': '/json/',

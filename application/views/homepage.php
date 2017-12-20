@@ -70,12 +70,15 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/store.js/1.3.14/store.min.js"></script>
     <script src="scripts/vendor/angular-ui-tinymce/dist/tinymce.min.js"></script>
     <script src="scripts/vendor/angular-encode-uri/dist/angular-encode-uri.min.js"></script>
+    <script src="scripts/vendor/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
+    <script src="scripts/vendor/ng-file-upload/ng-file-upload.min.js"></script>
     <script src="scripts/app/app.js"></script>
     <script src="scripts/app/config/app.config.js"></script>
     <script src="scripts/app/components/header/header.meta.service.js"></script>
     <script src="scripts/app/config/app.directives.js"></script>
     <script src="scripts/app/home/home.controller.js"></script>
     <script src="scripts/app/user/user.controller.js"></script>
+    <script src="scripts/app/file/file.controller.js"></script>
     <script src="scripts/app/user/user.login.controller.js"></script>
     <script src="scripts/app/components/menu/menu.controller.js"></script>
     <script src="scripts/app/components/navbar/navbar.controller.js"></script>

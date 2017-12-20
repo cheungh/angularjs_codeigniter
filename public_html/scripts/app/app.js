@@ -1,4 +1,4 @@
-var app = angular.module('memberssite', ['ngAnimate', 'toaster', 'Config', 'Directives', 'ui.tinymce', 'rt.encodeuri'], function () {
+var app = angular.module('memberssite', ['ngAnimate', 'toaster', 'Config', 'Directives', 'ngFileUpload', 'ui.tinymce', 'rt.encodeuri'], function () {
 
 
     //console.log('Angular loaded');

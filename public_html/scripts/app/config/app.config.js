@@ -50,6 +50,10 @@ angular.module('Config', ['ui.router', 'ngRoute'])
                 url: '/home',
                 templateUrl: 'views/pages/home.html'
             })
+            .state('file_upload', {
+                url: '/file_upload',
+                templateUrl: 'views/pages/file_upload.html'
+            })
             .state('news', {
                 url: '/news/:newId/:newTitle',
                 templateUrl: 'views/pages/news.html'
